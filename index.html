@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hollywood Map </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lib/knockout-3.2.0.js"></script>
+  <style type="text/css">
+    .container{
+      width: 1000px;
+    }
+    .map-div {
+      float: left;
+      width:650px;
+      height:100vh;
+    }
+    .side-nav{
+      float: right;
+      width: 230px;
+      height: 100%;
+      background-color: blue;
+
+    }
+     #pano {
+        width: 200px;
+        height: 200px;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div id="map" class='map-div'></div>
+    <div class='side-nav'>
+      <h3>Favorite Places in Hollywood, CA</h3>
+      <form>
+        <label>Filter Locations by Entering Name of Location:</label>
+        <input id="nameOfLocation" type="text" data-bind="textInput: nameOfLocation" />
+        <!-- <button data-bind="click: searchLocation">Submit</button> -->
+      </form>
+
+      <ul data-bind="foreach: locations">
+        <li data-bind="visible: visible_location, text: title, click: showDiv.toggle()"></li>
+        <div data-bind="visible: showDiv">
+          <div data-bind="text: formatted_address"></div>
+          <div data-bind="text: formatted_phone_number"></div>
+          <div data-bind="html: opening_hours"></div>
+          <img data-bind="attr:{src: photos}"/>
+          <div data-bind="html: foursquareTips"></div>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+  <!-- <script type="text/javascript" src="js/lib/knockout-3.2.0.js"></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQ9NJU_A7DqFo4zin1lXW6Wq_cqh-lMgA&libraries=places"></script>
+  <script type="text/javascript" src="js/map_2.js"></script>
+
+</body>
+</html>
