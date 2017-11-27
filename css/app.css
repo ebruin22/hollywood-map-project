@@ -1,0 +1,19 @@
+    .container{
+      width: 1000px;
+    }
+    .map-div {
+      float: left;
+      width:650px;
+      height:100vh;
+    }
+    .side-nav{
+      float: right;
+      width: 230px;
+      height: 100%;
+      background-color: blue;
+
+    }
+     #pano {
+        width: 200px;
+        height: 200px;
+      }
