@@ -1,8 +1,6 @@
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
-/*    .container-fluid {
-      width: 1000px;
-    }*/
+
     .map-div {
       /*float: left;*/
       /*width:650px;*/
@@ -24,9 +22,7 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-/*     .container-fluid {
-      width: 100%;
-    }*/
+
     .map-div {
       /*float: left;*/
       width:650px;
