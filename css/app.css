@@ -30,10 +30,11 @@
       font-size: 2em;
 
     }
-
+    li {
+      list-style-type: none;
+    }
     .map-div {
-      /*float: left;*/
-      /*width:650px;*/
+
       height:200vh;
     }
     .side-nav{
