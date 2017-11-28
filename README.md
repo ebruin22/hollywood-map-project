@@ -24,4 +24,4 @@ Download or clone this repo and open index.html.
 View Live demo at http://ebruin22.github.io/neighborhood-map
 
 ## Acknowledgemnts ##
-* Inspired by project http://jshanks24.github.io/Udacity-Neighborhood-Map
+Inspired by project: http://jshanks24.github.io/Udacity-Neighborhood-Map
