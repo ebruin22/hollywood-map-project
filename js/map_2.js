@@ -13,9 +13,9 @@ var GoogleMapViewModel = function() {
         //locations array
         self.locations = ko.observableArray(
           [{
-              location: {lat: 34.1341151 , lng: -118.3215482},
+              location: {lat: 34.1341151, lng: -118.3215482},
               title: 'Hollywood Sign',
-              g_place_id: 'ChIJfVpQRQq_woARQ5hwJsast6s',
+              g_place_id: 'ChIJm5Vk8XC_woARFW1mrqLL-n4',
               foursquare_venue_id: '4afee5f7f964a5205a3122e3',
               formatted_address: ko.observable(''),
               formatted_phone_number: ko.observable(''),
@@ -40,9 +40,9 @@ var GoogleMapViewModel = function() {
               visible_location: ko.observable(true)   
             },
             {
-              location: {lat: 34.118231 , lng: -118.300438},
+              location: {lat: 34.1184341, lng: -118.3003935},
               title: 'Griffith Observatory',
-              g_place_id: 'ChIJDQUp5mG_woARPGoCqvGBvMM', 
+              g_place_id: 'ChIJywjU6WG_woAR3NrWwrEH_3M', 
               foursquare_venue_id:'4a6e5d0df964a52093d41fe3',
               formatted_address: ko.observable(''),
               formatted_phone_number: ko.observable(''),
@@ -198,6 +198,7 @@ var GoogleMapViewModel = function() {
 
           // Create an onclick event to open the large infowindow at each marker.
           marker.addListener('click', function() {
+            toggleBounce(this);
             populateInfoWindow(this, largeInfowindow);
           });
 
@@ -231,6 +232,16 @@ var GoogleMapViewModel = function() {
 };
 
 
+// animation for marker when clicked
+function toggleBounce(marker) {
+    if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+    } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+    }
+}
+
+
 //Custom function to toggle a variable
 //call using variableName.toggle() in html
 ko.observable.fn.toggle = function () {
@@ -248,29 +259,23 @@ var foursquareUrl;
 
 function getFourSquareTips(current_location){
 
-  var fs_id = current_location.foursquare_venue_id;
-  foursquareUrl = 'https://api.foursquare.com/v2/venues/' + fs_id + '/tips?sort=recent&limit=5&v='+20150609+'&client_id=' + foursquare_key +'&client_secret=' + foursquare_client_secret;
+    var fs_id = current_location.foursquare_venue_id;
+    foursquareUrl = 'https://api.foursquare.com/v2/venues/' + fs_id + '/tips?sort=recent&limit=5&v='+20150609+'&client_id=' + foursquare_key +'&client_secret=' + foursquare_client_secret;
 
-
-  this.getFoursquareResponse = function(){
+    this.getFoursquareResponse = function(){
         var fs_tips = [];
 
         $.getJSON(foursquareUrl,
-          function(data) {
-            $.each(data.response.tips.items.slice(0,5), function(i, tips){
-              fs_tips.push('<li>' + tips.text + '</li>');
+            function(data) {
+                $.each(data.response.tips.items.slice(0,5), function(i, tips){
+                  fs_tips.push('<li>' + tips.text + '</li>');
+                });
+            }).done(function(){
+                current_location.foursquareTips('<h4>Recent Visitor Comments from FourSquare:</h4>' + '<ol class="tips">' + fs_tips.join('') + '</ol>');
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                current_location.foursquareTips('<h3>Recent Comments</h3>' + '<h4>Sorry. There was a problem retrieving this location\'s user tips.</h4>');        
             });
-
-          }).done(function(){
-
-            current_location.foursquareTips('<h4>Recent Visitor Comments from FourSquare:</h4>' + '<ol class="tips">' + fs_tips.join('') + '</ol>');
-
-          }).fail(function(jqXHR, textStatus, errorThrown) {
-            current_location.foursquareTips('<h3>Recent Comments</h3>' + '<h4>Oops. There was a problem retrieving this location\'s comments.</h4>');        
-            console.log('getJSON request failed! ' + textStatus);
-          });
         }();
-
 }
 
 
@@ -352,14 +357,14 @@ function populateInfoWindow(marker, infowindow) {
       // Open the infowindow on the correct marker.
       infowindow.open(map, marker);
     }
-  };
+  }
 
 // show markers on map
 function showMarkers(markers) {
     for (var i = 0; i < markers.length; i++) {
         markers[i].setMap(map); 
     }
-};
+}
     
 
 ko.applyBindings(new GoogleMapViewModel());
