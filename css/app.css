@@ -23,6 +23,7 @@
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
     * {
+      /*color: white;*/
       font-size: 1.10em;
       font-family: 'Raleway', sans-serif;
     }
@@ -34,9 +35,14 @@
     h1 {
       font-size: 2em;
       margin-bottom: 1em; 
+      color: white;
 
     }
+    label {
+      color:white;
+    }
     .location_li {
+      color: white;
       list-style-type: none;
       margin-left: -1.5em;
       margin-bottom: .5em;
@@ -48,7 +54,7 @@
     }
     .side-nav{
       height: 100vh;
-      /*background-color: blue;*/
+      background-color: #4A75EE;
       overflow: auto;
 
     }
@@ -62,6 +68,7 @@
         height: 200px;
       }
     .place_details {
+      color: black;
       width: 100%;
       font-size: .75em;
       margin-left: -2em;
@@ -71,10 +78,10 @@
       margin-bottom: 1em;
     }
     .phone_number {
-      margin-bottom: 1em;
+      margin-bottom: .25em;
     }
     .hours {
-      margin-bottom: .25em;
+      margin-bottom: .1em;
     }
     .location_photo {
       width:100%;
