@@ -254,7 +254,7 @@ var foursquareUrl;
 function getFourSquareTips(current_location){
 
     var fs_id = current_location.foursquare_venue_id;
-    foursquareUrl = 'https://api.foursquare.com/v2/venues/' + fs_id + '/tips?sort=recent&limit=5&v='+20150609+'&client_id=' + foursquare_key +'&client_secret=' + foursquare_client_secret;
+    foursquareUrl = 'https://api.foursquare.com/v2/venues/' + fs_id + '/tips?sort=recent&v='+20150609+'&client_id=' + foursquare_key +'&client_secret=' + foursquare_client_secret;
 
     this.getFoursquareResponse = function(){
         var fs_tips = [];
