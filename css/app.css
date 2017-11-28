@@ -1,5 +1,8 @@
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
+    #mobile {
+      display: none;
+    }
     * {
       font-size: 1.10em;
       font-family: 'Raleway', sans-serif;
@@ -76,6 +79,9 @@
 
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+    #mobile {
+      display: none;
+    }
     * {
       font-size: 1.10em;
       font-family: 'Raleway', sans-serif;
@@ -151,6 +157,9 @@
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+    #mobile {
+      display: none;
+    }
     * {
       font-size: 1em;
       font-family: 'Raleway', sans-serif;
@@ -226,10 +235,160 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    #mobile {
+      display: none;
+    }
+    * {
+      font-size: 1em;
+      font-family: 'Raleway', sans-serif;
+    }
+    .row.equal {
+    display: flex;
+    flex-wrap: wrap;
+    }
 
+    h1 {
+      font-size: 2em;
+      margin-bottom: 1em; 
+      color: white;
+
+    }
+    label {
+      color:white;
+    }
+    .location_li {
+      color: white;
+      list-style-type: none;
+      margin-left: -1.5em;
+      margin-bottom: .5em;
+    }
+    .map-div {
+      height:100vh;
+
+    }
+    .side-nav{
+      height: 100vh;
+      background-color: #4A75EE;
+      overflow: auto;
+
+    }
+    input#nameOfLocation {
+      width: 100%;
+      margin-bottom: 2em;
+
+    }
+     #pano {
+        width: 200px;
+        height: 200px;
+      }
+    .place_details {
+      color: black;
+      width: 100%;
+      font-size: .75em;
+      margin-left: -2em;
+
+      }
+    .address {
+      margin-bottom: 1em;
+    }
+    .phone_number {
+      margin-bottom: .25em;
+    }
+    .hours {
+      margin-bottom: .1em;
+    }
+    .location_photo {
+      width:100%;
+      height: 10em;
+      margin-bottom: 1em;
+    }
+    img.location_photo {
+      border: solid 2px white;
+    }
+    .foursquare {
+      font-size: .95em;
+      margin-bottom: 1em;
+    }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+   * {
+      font-size: 1.05em;
+      font-family: 'Raleway', sans-serif;
+    }
+    .row.equal {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    h1 {
+      font-size: 1.75em;
+      margin-bottom: 1em; 
+      color: white;
+
+    }
+    label {
+      color:white;
+    }
+    .location_li {
+      color: white;
+      list-style-type: none;
+      margin-left: -1.5em;
+      margin-bottom: .5em;
+    }
+    .map-div {
+      height:100vh;
+
+    }
+    .side-nav{
+      height: 100vh;
+      background-color: #4A75EE;
+      overflow: auto;
+
+    }
+    input#nameOfLocation {
+      width: 80%;
+      margin-bottom: 2em;
+
+    }
+     #pano {
+        width: 200px;
+        height: 200px;
+      }
+    .place_details {
+      color: black;
+      width: 85%;
+      font-size: .75em;
+      margin-left: -2em;
+
+      }
+    .address {
+      margin-bottom: 1em;
+    }
+    .phone_number {
+      margin-bottom: .25em;
+    }
+    .hours {
+      margin-bottom: .1em;
+    }
+    .location_photo {
+      width:100%;
+      height: 10em;
+      margin-bottom: 1em;
+    }
+    img.location_photo {
+      border: solid 2px white;
+    }
+    .foursquare {
+      font-size: .95em;
+      margin-bottom: 1em;
+    }
+    .scroll_map {
+      margin-top: 2em;
+      margin-left: .5em;
+      font-size: 1.5em;
+      color: white;
+    }
 
 }

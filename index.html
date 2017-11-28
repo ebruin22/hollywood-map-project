@@ -7,13 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
     <div class="container-fluid">
         <div class="row equal">
-              <div class="col-xs-4 side-nav">
+              <div class="col-xs-12 col-md-4 side-nav">
                     <div class="header">
                          <h1>HOLLYWOOD, CA</h1>
                     </div>
@@ -28,13 +30,12 @@
                           <div class="address" data-bind="text: formatted_address"></div>
                           <div class="phone_number" data-bind="text: formatted_phone_number"></div>
                           <div class="hours" data-bind="html: opening_hours"></div>
-                         <!--  <img class="location_photo" data-bind="attr:{src: photos}"/> -->
                           <div class="foursquare" data-bind="html: foursquareTips"></div>
                         </div>
                       </ul>
+                      <p class="scroll_map">Scroll down for Map</p>
               </div>
-              <div id="map" class="col-xs-8 map-div">
-
+              <div id="map" class="col-xs-12 col-md-8 map-div">
               </div>
         </div>
   </div>
