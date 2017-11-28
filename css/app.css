@@ -157,10 +157,7 @@
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-    #mobile {
-      display: none;
-    }
-    * {
+  * {
       font-size: 1em;
       font-family: 'Raleway', sans-serif;
     }
@@ -235,18 +232,24 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-    #mobile {
-      display: none;
-    }
     * {
       font-size: 1em;
       font-family: 'Raleway', sans-serif;
     }
-    .row.equal {
-    display: flex;
-    flex-wrap: wrap;
-    }
+    .row {
+      
+      /* Setup Flexbox */
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
 
+      /* Reverse Column Order */
+      -webkit-flex-flow: column-reverse;
+      flex-flow: column-reverse;
+
+    }
     h1 {
       font-size: 2em;
       margin-bottom: 1em; 
@@ -263,7 +266,7 @@
       margin-bottom: .5em;
     }
     .map-div {
-      height:100vh;
+      height:85vh;
 
     }
     .side-nav{
@@ -312,14 +315,24 @@
 }
 
 /* Portrait phones and smaller */
-@media (max-width: 480px) {
+@media (max-width: 468px) {
    * {
       font-size: 1.05em;
       font-family: 'Raleway', sans-serif;
     }
-    .row.equal {
-    display: flex;
-    flex-wrap: wrap;
+    .row {
+      
+      /* Setup Flexbox */
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      /* Reverse Column Order */
+      -webkit-flex-flow: column-reverse;
+      flex-flow: column-reverse;
+
     }
 
     h1 {
@@ -338,7 +351,7 @@
       margin-bottom: .5em;
     }
     .map-div {
-      height:100vh;
+      height:90vh;
 
     }
     .side-nav{
