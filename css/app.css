@@ -71,322 +71,291 @@
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
     * {
-      font-size: 1.10em;
-      font-family: 'Raleway', sans-serif;
+        font-size: 1.10em;
+        font-family: 'Raleway', sans-serif;
     }
     .row.equal {
-    display: flex;
-    flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
     }
-
     h1 {
-      font-size: 2em;
-      margin-bottom: 1em; 
-      color: white;
-
+        font-size: 2em;
+        margin-bottom: 1em; 
+        color: white;
     }
     label {
-      color:white;
+        color:white;
     }
     .location_li {
-      color: white;
-      list-style-type: none;
-      margin-left: -1.5em;
-      margin-bottom: .5em;
+        color: white;
+        list-style-type: none;
+        margin-left: -1.5em;
+        margin-bottom: .5em;
     }
     .map-div {
-      height:100vh;
+        height:100vh;
     }
     .side-nav {
-      height: 100vh;
-      background-color: #4A75EE;
-      overflow: auto;
+        height: 100vh;
+        background-color: #4A75EE;
+        overflow: auto;
     }
     input#nameOfLocation {
-      width: 100%;
-      margin-bottom: 2em;
+        width: 100%;
+        margin-bottom: 2em;
     }
     #pano {
-      width: 200px;
-      height: 200px;
+        width: 200px;
+        height: 200px;
     }
     .place_details {
-      color: black;
-      width: 100%;
-      font-size: .75em;
-      margin-left: -2em;
-
+        color: black;
+        width: 100%;
+        font-size: .75em;
+        margin-left: -2em;
     }
     .address {
-      margin-bottom: 1em;
+        margin-bottom: 1em;
     }
     .phone_number {
-      margin-bottom: .25em;
+        margin-bottom: .25em;
     }
     .hours {
-      margin-bottom: .1em;
+        margin-bottom: .1em;
     }
     .location_photo {
-      width:100%;
-      height: 10em;
-      margin-bottom: 1em;
+        width:100%;
+        height: 10em;
+        margin-bottom: 1em;
     }
     img.location_photo {
-      border: solid 2px white;
+        border: solid 2px white;
     }
     .foursquare {
-      font-size: .95em;
-      margin-bottom: 1em;
+        font-size: .95em;
+        margin-bottom: 1em;
     }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   * {
-      font-size: 1em;
-      font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        font-family: 'Raleway', sans-serif;
     }
     .row.equal {
-    display: flex;
-    flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
     }
-
     h1 {
-      font-size: 2em;
-      margin-bottom: 1em; 
-      color: white;
-
+        font-size: 2em;
+        margin-bottom: 1em; 
+        color: white;
     }
     label {
-      color:white;
+        color:white;
     }
     .location_li {
-      color: white;
-      list-style-type: none;
-      margin-left: -1.5em;
-      margin-bottom: .5em;
+        color: white;
+        list-style-type: none;
+        margin-left: -1.5em;
+        margin-bottom: .5em;
     }
     .map-div {
-      height:100vh;
-
+         height: 100vh;
     }
-    .side-nav{
-      height: 100vh;
-      background-color: #4A75EE;
-      overflow: auto;
-
+    .side-nav {
+        height: 100vh;
+        background-color: #4A75EE;
+        overflow: auto;
     }
     input#nameOfLocation {
-      width: 100%;
-      margin-bottom: 2em;
-
+        width: 100%;
+        margin-bottom: 2em;
     }
      #pano {
         width: 200px;
         height: 200px;
       }
     .place_details {
-      color: black;
-      width: 100%;
-      font-size: .75em;
-      margin-left: -2em;
-
+        color: black;
+        width: 100%;
+        font-size: .75em;
+        margin-left: -2em;
       }
     .address {
-      margin-bottom: 1em;
+        margin-bottom: 1em;
     }
     .phone_number {
-      margin-bottom: .25em;
+        margin-bottom: .25em;
     }
     .hours {
-      margin-bottom: .1em;
+        margin-bottom: .1em;
     }
     .location_photo {
-      width:100%;
-      height: 10em;
-      margin-bottom: 1em;
+        width:100%;
+        height: 10em;
+        margin-bottom: 1em;
     }
     img.location_photo {
-      border: solid 2px white;
+        border: solid 2px white;
     }
     .foursquare {
-      font-size: .95em;
-      margin-bottom: 1em;
+        font-size: .95em;
+        margin-bottom: 1em;
     }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     * {
-      font-size: 1em;
-      font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        font-family: 'Raleway', sans-serif;
     }
     .row {
-      
-      /* Setup Flexbox */
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-
-      /* Reverse Column Order */
-      -webkit-flex-flow: column-reverse;
-      flex-flow: column-reverse;
-
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: column-reverse;
+        flex-flow: column-reverse;
     }
     h1 {
-      font-size: 2em;
-      margin-bottom: 1em; 
-      color: white;
-
+        font-size: 2em;
+        margin-bottom: 1em; 
+        color: white;
     }
     label {
-      color:white;
+        color:white;
     }
     .location_li {
-      color: white;
-      list-style-type: none;
-      margin-left: -1.5em;
-      margin-bottom: .5em;
+        color: white;
+        list-style-type: none;
+        margin-left: -1.5em;
+        margin-bottom: .5em;
     }
     .map-div {
-      height:85vh;
-
+        height: 85vh;
     }
-    .side-nav{
-      height: 100vh;
-      background-color: #4A75EE;
-      overflow: auto;
-
+    .side-nav {
+        height: 100vh;
+        background-color: #4A75EE;
+        overflow: auto;
     }
     input#nameOfLocation {
-      width: 100%;
-      margin-bottom: 2em;
-
+        width: 100%;
+        margin-bottom: 2em;
     }
      #pano {
         width: 200px;
         height: 200px;
-      }
+    }
     .place_details {
-      color: black;
-      width: 100%;
-      font-size: .75em;
-      margin-left: -2em;
-
-      }
+        color: black;
+        width: 100%;
+        font-size: .75em;
+        margin-left: -2em;
+    }
     .address {
-      margin-bottom: 1em;
+        margin-bottom: 1em;
     }
     .phone_number {
-      margin-bottom: .25em;
+        margin-bottom: .25em;
     }
     .hours {
-      margin-bottom: .1em;
+        margin-bottom: .1em;
     }
     .location_photo {
-      width:100%;
-      height: 10em;
-      margin-bottom: 1em;
+        width:100%;
+        height: 10em;
+        margin-bottom: 1em;
     }
     img.location_photo {
-      border: solid 2px white;
+        border: solid 2px white;
     }
     .foursquare {
-      font-size: .95em;
-      margin-bottom: 1em;
+        font-size: .95em;
+        margin-bottom: 1em;
     }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 468px) {
    * {
-      font-size: 1.05em;
-      font-family: 'Raleway', sans-serif;
+        font-size: 1.05em;
+        font-family: 'Raleway', sans-serif;
     }
     .row {
-      
-      /* Setup Flexbox */
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-
-      /* Reverse Column Order */
-      -webkit-flex-flow: column-reverse;
-      flex-flow: column-reverse;
-
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;/
+        -webkit-flex-flow: column-reverse;
+        flex-flow: column-reverse;
     }
-
     h1 {
-      font-size: 1.75em;
-      margin-bottom: 1em; 
-      color: white;
-
+        font-size: 1.75em;
+        margin-bottom: 1em; 
+        color: white;
     }
     label {
-      color:white;
+        color:white;
     }
     .location_li {
-      color: white;
-      list-style-type: none;
-      margin-left: -1.5em;
-      margin-bottom: .5em;
+        color: white;
+        list-style-type: none;
+        margin-left: -1.5em;
+        margin-bottom: .5em;
     }
     .map-div {
-      height:90vh;
-
+        height:90vh;
     }
     .side-nav{
-      height: 100vh;
-      background-color: #4A75EE;
-      overflow: auto;
-
+        height: 100vh;
+        background-color: #4A75EE;
+        overflow: auto;
     }
     input#nameOfLocation {
-      width: 80%;
-      margin-bottom: 2em;
-
+        width: 80%;
+        margin-bottom: 2em;
     }
      #pano {
         width: 200px;
         height: 200px;
-      }
+    }
     .place_details {
-      color: black;
-      width: 85%;
-      font-size: .75em;
-      margin-left: -2em;
-
-      }
+        color: black;
+        width: 85%;
+        font-size: .75em;
+        margin-left: -2em;
+    }
     .address {
-      margin-bottom: 1em;
+        margin-bottom: 1em;
     }
     .phone_number {
-      margin-bottom: .25em;
+        margin-bottom: .25em;
     }
     .hours {
-      margin-bottom: .1em;
+        margin-bottom: .1em;
     }
     .location_photo {
-      width:100%;
-      height: 10em;
-      margin-bottom: 1em;
+        width:100%;
+        height: 10em;
+        margin-bottom: 1em;
     }
     img.location_photo {
-      border: solid 2px white;
+        border: solid 2px white;
     }
     .foursquare {
-      font-size: .95em;
-      margin-bottom: 1em;
+        font-size: .95em;
+        margin-bottom: 1em;
     }
     .scroll_map {
-      margin-top: 2em;
-      margin-left: .5em;
-      font-size: 1.5em;
-      color: white;
+        margin-top: 2em;
+        margin-left: .5em;
+        font-size: 1.5em;
+        color: white;
     }
-
 }
