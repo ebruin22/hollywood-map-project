@@ -1,7 +1,4 @@
-# Hollywood,CA Map Project#
-
-
-## Description ##
+# Hollywood,CA Map Project #
 
 This repo contains project files for a single page website that shows a map of Hollywood California. The webpage includes place markers for sites of interest and a list view of locations with general information such as hours of operation. The list view also includes tips from Foursquare users. Place markers when clicked also show an infowindow with Google view of the location.
 
