@@ -26,20 +26,26 @@
       font-size: 1.10em;
       font-family: 'Raleway', sans-serif;
     }
+    .row.equal {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
     h1 {
       font-size: 2em;
+      margin-bottom: 1em; 
 
     }
-    li {
+    .location_li {
       list-style-type: none;
+      margin-bottom: .5em;
     }
     .map-div {
-
-      height:200vh;
+      height:250vh;
     }
     .side-nav{
-      height: 200vh;
-      background-color: blue;
+      height: 250vh;
+      /*background-color: blue;*/
 
     }
     input#nameOfLocation {
@@ -51,6 +57,29 @@
         width: 200px;
         height: 200px;
       }
+    .place_details {
+      width: 100%;
+      font-size: .75em;
+      /*margin-left: -.2em;*/
+
+      }
+    .address {
+      margin-bottom: 1em;
+    }
+    .phone_number {
+      margin-bottom: 1em;
+    }
+    .hours {
+      margin-bottom: 1em;
+    }
+    .location_photo {
+      width:100%;
+      margin-bottom: 1em;
+    }
+    .foursquare {
+      font-size: .95em;
+      margin-bottom: 1em;
+    }
 }
 
 /* Portrait tablets and small desktops */
