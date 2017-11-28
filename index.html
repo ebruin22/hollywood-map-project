@@ -27,13 +27,13 @@
                 </form>
                 <ul class="list" data-bind="foreach: locations">
                     <li class="location_li" data-bind="visible: visible_location, text: title, click: showDiv.toggle()"></li>
-                    <div class="place_details" data-bind="visible: showDiv">
-                        <img class="location_photo" data-bind="attr:{src: photos}"/>
+                    <li><div class="place_details" data-bind="visible: showDiv">
+                        <img class="location_photo" data-bind="attr:{src: photos}" alt="location"/>
                         <div class="address" data-bind="text: formatted_address"></div>
                         <div class="phone_number" data-bind="text: formatted_phone_number"></div>
                         <div class="hours" data-bind="html: opening_hours"></div>
                         <div class="foursquare" data-bind="html: foursquareTips"></div>
-                    </div>
+                    </div></li>
                 </ul>
             </div>
             <div id="map" class="col-xs-12 col-sm-8 map-div">

@@ -17,9 +17,11 @@
         color: white;
         margin-right: 3em;
     }
+    ul li {
+        list-style-type: none;
+    }
     .location_li {
         color: white;
-        list-style-type: none;
         margin-left: -1.5em;
         margin-bottom: .5em;
     }
@@ -86,9 +88,11 @@
     label {
         color:white;
     }
+    ul li {
+        list-style-type: none;
+    }
     .location_li {
         color: white;
-        list-style-type: none;
         margin-left: -1.5em;
         margin-bottom: .5em;
     }
@@ -155,9 +159,11 @@
     label {
         color:white;
     }
+    ul li {
+        list-style-type: none;
+    }
     .location_li {
         color: white;
-        list-style-type: none;
         margin-left: -1.5em;
         margin-bottom: .5em;
     }
@@ -229,9 +235,11 @@
     label {
         color:white;
     }
+    ul li {
+        list-style-type: none;
+    }
     .location_li {
         color: white;
-        list-style-type: none;
         margin-left: -1.5em;
         margin-bottom: .5em;
     }
@@ -303,9 +311,11 @@
     label {
         color:white;
     }
+    ul li {
+        list-style-type: none;
+    }
     .location_li {
         color: white;
-        list-style-type: none;
         margin-left: -1.5em;
         margin-bottom: .5em;
     }
