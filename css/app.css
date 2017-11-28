@@ -38,15 +38,18 @@
     }
     .location_li {
       list-style-type: none;
+      margin-left: -1.5em;
       margin-bottom: .5em;
     }
     .map-div {
-      height:130vh;
+      height:100vh;
+      /*overflow: auto; */
       /*background-color: blue;*/
     }
     .side-nav{
-      height: 130vh;
-      background-color: blue;
+      height: 100vh;
+      /*background-color: blue;*/
+      overflow: auto;
 
     }
     input#nameOfLocation {
@@ -61,7 +64,7 @@
     .place_details {
       width: 100%;
       font-size: .75em;
-      /*margin-left: -.2em;*/
+      margin-left: -2em;
 
       }
     .address {
@@ -71,7 +74,7 @@
       margin-bottom: 1em;
     }
     .hours {
-      margin-bottom: 1em;
+      margin-bottom: .25em;
     }
     .location_photo {
       width:100%;

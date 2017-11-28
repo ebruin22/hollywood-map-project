@@ -14,25 +14,26 @@
     <div class="container-fluid">
         <div class="row equal">
               <div class="col-xs-4 side-nav">
-                  <h1>HOLLYWOOD, CA</h1>
-                  <form>
-                    <label>Location:</label>
-                    <input id="nameOfLocation" type="text" data-bind="textInput: nameOfLocation" />
-                    <!-- <button data-bind="click: searchLocation">Submit</button> -->
-                  </form>
-                  <ul data-bind="foreach: locations">
-                    <li class="location_li" data-bind="visible: visible_location, text: title, click: showDiv.toggle()"></li>
-                    <div class="place_details" data-bind="visible: showDiv">
-                      <div class="address" data-bind="text: formatted_address"></div>
-                      <div class="phone_number" data-bind="text: formatted_phone_number"></div>
-                      <div class="hours" data-bind="html: opening_hours"></div>
-                      <img class="location_photo" data-bind="attr:{src: photos}"/>
-                      <div class="foursquare" data-bind="html: foursquareTips"></div>
+                    <div class="header">
+                         <h1>HOLLYWOOD, CA</h1>
                     </div>
-                  </ul>
+                    <form>
+                        <label>Location:</label>
+                        <input id="nameOfLocation" type="text" data-bind="textInput: nameOfLocation" />
+                    </form>
+                      <ul class="list"data-bind="foreach: locations">
+                        <li class="location_li" data-bind="visible: visible_location, text: title, click: showDiv.toggle()"></li>
+                        <div class="place_details" data-bind="visible: showDiv">
+                          <div class="address" data-bind="text: formatted_address"></div>
+                          <div class="phone_number" data-bind="text: formatted_phone_number"></div>
+                          <div class="hours" data-bind="html: opening_hours"></div>
+                          <img class="location_photo" data-bind="attr:{src: photos}"/>
+                          <div class="foursquare" data-bind="html: foursquareTips"></div>
+                        </div>
+                      </ul>
               </div>
               <div id="map" class="col-xs-8 map-div">
-                <!-- <div id="map" class='map-div'></div> -->
+
               </div>
         </div>
   </div>
