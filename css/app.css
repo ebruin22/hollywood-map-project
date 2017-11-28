@@ -41,11 +41,12 @@
       margin-bottom: .5em;
     }
     .map-div {
-      height:250vh;
+      height:130vh;
+      /*background-color: blue;*/
     }
     .side-nav{
-      height: 250vh;
-      /*background-color: blue;*/
+      height: 130vh;
+      background-color: blue;
 
     }
     input#nameOfLocation {
