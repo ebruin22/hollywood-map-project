@@ -1,7 +1,11 @@
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
     * {
-        font-size: 1.10em;
+        font-size: 1.1em;
+        font-family: 'Raleway', sans-serif;
+    }
+    .infoWindow {
+        font-size: 1em;
         font-family: 'Raleway', sans-serif;
     }
     .row.equal {
@@ -12,6 +16,17 @@
         font-size: 2em;
         margin-bottom: 1em; 
         color: white;
+    }
+    h2 {
+        color: white;
+    }
+    hr.line {
+        border-top: 1px solid black;
+        margin-top: -1.5em;
+    }
+    h4 {
+        margin-top: 1.2em;
+        font-size: 1.3em;
     }
     label {
         color: white;
@@ -24,6 +39,13 @@
         color: white;
         margin-left: -1.5em;
         margin-bottom: .5em;
+    }
+    .tips {
+        margin-left: -1em;
+    }
+    .tips li {
+        list-style-type: square;
+        font-size: 1em;
     }
     .map-div {
         height:100vh;
@@ -38,8 +60,8 @@
         margin-bottom: 2em;
     }
     #pano {
-        width: 200px;
-        height: 200px;
+        width: 85%;
+        height: 25vh;
     }
     .place_details {
         color: black;
@@ -73,7 +95,11 @@
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
     * {
-        font-size: 1.10em;
+        font-size: 1.1em;
+        font-family: 'Raleway', sans-serif;
+    }
+    .infoWindow {
+        font-size: 1em;
         font-family: 'Raleway', sans-serif;
     }
     .row.equal {
@@ -81,9 +107,16 @@
         flex-wrap: wrap;
     }
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
         margin-bottom: 1em; 
         color: white;
+    }
+    h2 {
+        color: white;
+    }
+    hr.line {
+        border-top: 1px solid black;
+        margin-top: -1.5em;
     }
     label {
         color:white;
@@ -95,6 +128,13 @@
         color: white;
         margin-left: -1.5em;
         margin-bottom: .5em;
+    }
+    .tips {
+        margin-left: -1em;
+    }
+    .tips li {
+        list-style-type: square;
+        font-size: 1em;
     }
     .map-div {
         height:100vh;
@@ -109,8 +149,8 @@
         margin-bottom: 2em;
     }
     #pano {
-        width: 200px;
-        height: 200px;
+        width: 85%;
+        height: 25vh;
     }
     .place_details {
         color: black;
@@ -144,6 +184,10 @@
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   * {
+        font-size: 1.11em;
+        font-family: 'Raleway', sans-serif;
+    }
+    .infoWindow {
         font-size: 1em;
         font-family: 'Raleway', sans-serif;
     }
@@ -152,15 +196,33 @@
         flex-wrap: wrap;
     }
     h1 {
-        font-size: 2em;
+        font-size: 1.7em;
         margin-bottom: 1em; 
         color: white;
+    }
+    hr.line {
+        border-top: 1px solid black;
+        margin-top: -1.5em;
+    }
+    h2 {
+        color: white;
+    }
+    h4 {
+        margin-top: 1.2em;
+        font-size: 1.13em;
     }
     label {
         color:white;
     }
     ul li {
         list-style-type: none;
+    }
+    .tips {
+        margin-left: -1em;
+    }
+    .tips li {
+        list-style-type: square;
+        font-size: 1em;
     }
     .location_li {
         color: white;
@@ -179,10 +241,10 @@
         width: 100%;
         margin-bottom: 2em;
     }
-     #pano {
-        width: 200px;
-        height: 200px;
-      }
+    #pano {
+        width: 85%;
+        height: 25vh;
+    }
     .place_details {
         color: black;
         width: 100%;
@@ -196,7 +258,8 @@
         margin-bottom: .25em;
     }
     .hours {
-        margin-bottom: .1em;
+        font-size: 1em;
+        margin-bottom: .15em;
     }
     .location_photo {
         width:100%;
@@ -218,6 +281,10 @@
         font-size: 1em;
         font-family: 'Raleway', sans-serif;
     }
+    .infoWindow {
+        font-size: 1em;
+        font-family: 'Raleway', sans-serif;
+    }
     .row {
         display: -webkit-box;
         display: -moz-box;
@@ -232,6 +299,13 @@
         margin-bottom: 1em; 
         color: white;
     }
+    hr.line {
+        border-top: 1px solid black;
+        margin-top: -1.5em;
+    }
+    h2 {
+        color: white;
+    }
     label {
         color:white;
     }
@@ -243,8 +317,15 @@
         margin-left: -1.5em;
         margin-bottom: .5em;
     }
+    .tips {
+        margin-left: -1em;
+    }
+    .tips li {
+        list-style-type: square;
+        font-size: 1em;
+    }
     .map-div {
-        height: 85vh;
+        height: 80vh;
     }
     .side-nav {
         height: 100vh;
@@ -255,9 +336,9 @@
         width: 100%;
         margin-bottom: 2em;
     }
-     #pano {
-        width: 200px;
-        height: 200px;
+    #pano {
+        width: 85%;
+        height: 25vh;
     }
     .place_details {
         color: black;
@@ -294,6 +375,10 @@
         font-size: 1.05em;
         font-family: 'Raleway', sans-serif;
     }
+    .infoWindow {
+        font-size: 1em;
+        font-family: 'Raleway', sans-serif;
+    }
     .row {
         display: -webkit-box;
         display: -moz-box;
@@ -308,6 +393,13 @@
         margin-bottom: 1em; 
         color: white;
     }
+    hr.line {
+        border-top: 1px solid black;
+        margin-top: -1.5em;
+    }
+    h2 {
+        color: white;
+    }
     label {
         color:white;
     }
@@ -319,8 +411,15 @@
         margin-left: -1.5em;
         margin-bottom: .5em;
     }
+    .tips {
+        margin-left: -1em;
+    }
+    .tips li {
+        list-style-type: square;
+        font-size: 1em;
+    }
     .map-div {
-        height:90vh;
+        height:80vh;
     }
     .side-nav{
         height: 100vh;
@@ -331,9 +430,9 @@
         width: 80%;
         margin-bottom: 2em;
     }
-     #pano {
-        width: 200px;
-        height: 200px;
+    #pano {
+        width: 85%;
+        height: 25vh;
     }
     .place_details {
         color: black;

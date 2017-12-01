@@ -2,13 +2,8 @@
 <html>
 <head>
     <title>Hollywood Map </title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/lib/knockout-3.2.0.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/app.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -19,19 +14,22 @@
         <div class="row equal">
             <div class="col-xs-12 col-sm-4 side-nav">
                 <div class="header">
-                     <h1>HOLLYWOOD, CA</h1>
+                    <h1>HOLLYWOOD, CA</h1>
+                    <hr class="line">
                 </div>
                 <form>
                     <label>Location:</label>
                     <input id="nameOfLocation" type="text" data-bind="textInput: nameOfLocation" />
                 </form>
+                <h2>Popular Venues</h2>
                 <ul class="list" data-bind="foreach: locations">
-                    <li class="location_li" data-bind="visible: visible_location, text: title, click: showDiv.toggle()"></li>
+                    <li class="location_li" data-bind="visible: visible_location, text: title, click: clickLocation(markers()[$index()], showDiv)"></li>
                     <li><div class="place_details" data-bind="visible: showDiv">
                         <img class="location_photo" data-bind="attr:{src: photos}" alt="location"/>
                         <div class="address" data-bind="text: formatted_address"></div>
                         <div class="phone_number" data-bind="text: formatted_phone_number"></div>
-                        <div class="hours" data-bind="html: opening_hours"></div>
+                        <div class="phone_number" data-bind="text: website"></div>
+                        <div class="hours" data-bind="html: popular_hours"></div>
                         <div class="foursquare" data-bind="html: foursquareTips"></div>
                     </div></li>
                 </ul>
@@ -40,7 +38,10 @@
             </div>
         </div>
     </div>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQ9NJU_A7DqFo4zin1lXW6Wq_cqh-lMgA&libraries=places"></script>
-  <script type="text/javascript" src="js/map_2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/knockout-3.2.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/map_2.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=googleLoad" onerror="googleFail()"></script>
 </body>
 </html>
